@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,height=device-height,inital-scale=1.0,maximum-scale=1.0,user-scalable=no">
+<meta name="apple-mobile-web-app-capable" content="yes">    
+<!-- iPhone私有标签，它表示：允许全屏模式浏览 -->
+<meta name="apple-mobile-web-app-status-bar-style" content="black">    
+<!-- iPhone私有标签，它指定的iPhone中safari顶端的状态条的样式 -->
+<meta name="format-detection" content="telephone=no; email=no" />    
+<!-- //不识别邮件和不把数字识别为电话号码 -->
+<meta name="screen-orientation" content="portrait" />
+<!-- uc强制竖屏 -->
+<title>百川环境-积分商城</title>
+<link rel="stylesheet" href="css/bootstrap/css/bootstrap.min.css" >
+<!-- 可选的Bootstrap主题文件（一般不用引入） -->
+<link rel="stylesheet" href="css/bootstrap/css/bootstrap-theme.min.css">
+<!-- jQuery文件。务必在bootstrap.min.js 之前引入 -->
+<script src="js/jquery/1.11.1/jquery.min.js"></script>
+<!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
+<script src="css/bootstrap/js/bootstrap.min.js"></script>
+<script src="js/jquery.cookie.js"></script>		
+<!-- 引入基本样式css -->
+<link rel="stylesheet" type="text/css" media="all"  href="css/base.css" >
+<!-- 引入公共样式css -->
+<link rel="stylesheet" type="text/css" media="all" href="css/common.css" >
+</head>
+<body>
+	<div class="wap-goods">	
+		<div class="container">			
+			<div class="row">
+				<!--userinfo-->
+				<div class="row fixed-header">
+					<a href="javascript:history.go(-1);" class="goback">
+						<img src="images/back.png" />
+					</a>
+					<h3 class="h-title">消息中心</h3>
+				</div>
+				
+				<!--messagelist-->
+				<div class="col-xs-12 mtop30">
+					<div class="goods-class">
+						<ul>
+							<li class="width25 left selected-class" onclick="changeMess('1',this)" >系统消息</li>
+							<li class="width25 left" onclick="changeMess('2',this)">社区消息</li>
+						</ul>
+					</div>
+					<div class="message-list" id="system">
+						<ul>
+							<li>
+								<img src="images/mess.png"  width="25px" class="left mright10" />
+								<a href="https://www.henandaily.cn/content/sh/yxz/2017/1112/75183.html">互联网+模式 让垃圾分类更智能 郑州启动生活垃圾分类试点项目</a>
+							</li>
+							<li>
+								<img src="images/mess.png"  width="25px" class="left mright10" />
+								<a href="http://henan.sina.com.cn/news/m/2018-04-11/detail-ifyteqtq7875526.shtml">年底前郑州所有中小学垃圾百分百无害化处理</a>
+							</li>
+							<li>
+								<img src="images/mess.png"  width="25px" class="left mright10" />
+								<a href="http://news.zzedu.net.cn/zzjyxw/04/2364600.shtml">市教育局生活垃圾分类工作培训班开班</a>
+							</li>
+							<li>
+								<img src="images/mess.png"  width="25px" class="left mright10" />
+								<a href="http://www.cenews.com.cn/zfzj_3479/xydt/201804/t20180409_870637.html?from=singlemessage&amp;isappinstalled=0">《郑州市2018年生活垃圾分类工作实施方案》印发 年底前生活垃圾100%无害化处理</a>
+							</li>
+							<li>
+								<img src="images/mess.png"  width="25px" class="left mright10" />
+								<a href="http://www.henan.gov.cn/zwgk/system/2017/07/28/010731432.shtml">郑州18个社区首批试点垃圾分类金水区、郑东新区分别确定10个社区</a>
+							</li>
+							<li>
+								<img src="images/mess.png"  width="25px" class="left mright10" />
+								<a href="http://www.zhengzhou.gov.cn/html/www/news4/20180402/732586.html">生活垃圾分类，郑州将如何“美”家“美”户</a></li>
+							<li>
+								<img src="images/mess.png"  width="25px" class="left mright10" />
+								<a href="http://henan.people.com.cn/n2/2018/0323/c380476-31378136.html">郑州市金水区启动垃圾分类 引导全社会共同参与</a>
+							</li>
+							<li>
+								<img src="images/mess.png"  width="25px" class="left mright10" />
+								<a href="http://www.zhengzhou.gov.cn/html/www/news3/20180329/725103.html">中原区在10个小区开展生活垃圾分类试点</a>
+							</li>
+							<li>
+								<img src="images/mess.png"  width="25px" class="left mright10" />
+								<a href="http://newpaper.dahe.cn/dhb/html/2018-04/11/content_236926.htm">小手拉动大手垃圾分类再“提速”</a>
+							</li>
+							<li>
+								<img src="images/mess.png"  width="25px" class="left mright10" />
+								<a href="http://hn.ifeng.com/a/20180322/6450013_0.shtml">郑州市出台方案，年底前生活垃圾100%无害化处理</a>
+							</li>
+							<li>
+								<img src="images/mess.png"  width="25px" class="left mright10" />
+								<a href="http://newpaper.dahe.cn/hnsb/html/2018-03/23/content_232288.htm">郑州各区生活垃圾分拣中心 8月底前建成使用</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<!--messagelist-->
+			</div>			
+		</div>
+	</div>
+	<script src="js/goods-list.js"></script>		
+	<script>
+		$(function  () {
+			width=$(".square-goods").width();
+			//alert(width);
+			$(".square-goods img").height(width)
+		});
+	</script>
+	<script src="js/message-list.js"></script>	
+</body>
+</html>

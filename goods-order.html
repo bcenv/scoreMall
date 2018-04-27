@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,height=device-height,inital-scale=1.0,maximum-scale=1.0,user-scalable=no">
+<meta name="apple-mobile-web-app-capable" content="yes">    
+<!-- iPhone私有标签，它表示：允许全屏模式浏览 -->
+<meta name="apple-mobile-web-app-status-bar-style" content="black">    
+<!-- iPhone私有标签，它指定的iPhone中safari顶端的状态条的样式 -->
+<meta name="format-detection" content="telephone=no; email=no" />    
+<!-- //不识别邮件和不把数字识别为电话号码 -->
+<meta name="screen-orientation" content="portrait" />
+<!-- uc强制竖屏 -->
+<title>百川环境-积分商城</title>
+<link rel="stylesheet" href="css/bootstrap/css/bootstrap.min.css" >
+<!-- 可选的Bootstrap主题文件（一般不用引入） -->
+<link rel="stylesheet" href="css/bootstrap/css/bootstrap-theme.min.css">
+<!-- jQuery文件。务必在bootstrap.min.js 之前引入 -->
+<script src="js/jquery/1.11.1/jquery.min.js"></script>
+<!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
+<script src="css/bootstrap/js/bootstrap.min.js"></script>
+<script src="js/jquery.cookie.js"></script>		
+<!-- 引入基本样式css -->
+<link rel="stylesheet" type="text/css" media="all"  href="css/base.css" >
+<!-- 引入公共样式css -->
+<link rel="stylesheet" type="text/css" media="all" href="css/common.css" >
+</head>
+<body>
+	<div class="wap-goods">	
+		<div class="container">			
+			<div class="row">
+				<!--userinfo-->
+				<div class="row fixed-header">
+					<a href="javascript:history.go(-1);" class="goback">
+						<img src="images/back.png" />
+					</a>
+					<h3 class="h-title">商品列表</h3>
+				</div>
+				
+				<!--goodsOrder-->
+				<div class="col-xs-12 mtop30">
+					<div class="big-img">
+						   <img src="images/group_bg.jpg" />      	
+					</div>
+					<div class="goods-infos">
+						 <div class="square-name ft16"> 		
+						 	<span>【	日常用品】佳洁士牙膏牙牙膏</span>
+						 </div>       
+						 <div class="square-score mtop10">
+						 	<span class="halfs">积分：<span class="red">199</span>环保币</span>
+						 </div>            	    
+						 <div class="square-pay mtop10">
+						 	<span class="halfs">支付：<span>¥2.00</span></span>
+						 </div>
+						 <div class="square-price mtop10">
+						 	<span class="halfs">原价：<span>¥20.00</span></span>
+						 </div>   
+						 <div class="payType mtop10">
+						 	<span class="halfs" style="line-height: 30px;">支付方式：</span>
+						 	<label>
+						 		<img src="images/wechat.png">
+					 			<input name="payType" type="radio" id="wechat" value="wechat" class="pay-radios"/>
+					 			<span></span>
+						 	</label>
+						 	<!--<label>
+						 		<img src="images/pay.png">
+					 			<input name="payType" type="radio" id="alipay" value="alipay"  class="pay-radios"/>
+					 			<span></span>
+						 	</label>-->
+						 </div> 
+						 <div class="square-btn mtop10 width50 left">
+						 	<button type="button" class="change-btn" id="goChange">点击兑换</button>
+						 </div>
+						 <div class="square-btn mtop10 width50 left">
+						 	<a href="goods-list.html" class="change-btn-gray" >取消兑换</a>
+						 </div> 
+					</div>
+				</div>
+				<!--goodsOrder-->
+			</div>			
+		</div>
+	</div>
+	<script src="js/goods-list.js"></script>		
+	<script>
+		$(function  () {
+			width=$(".big-img").width();
+			//alert(width);
+			$(".big-img img").height(width)
+		});
+	</script>
+</body>
+</html>

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,height=device-height,inital-scale=1.0,maximum-scale=1.0,user-scalable=no">
+<meta name="apple-mobile-web-app-capable" content="yes">    
+<!-- iPhone私有标签，它表示：允许全屏模式浏览 -->
+<meta name="apple-mobile-web-app-status-bar-style" content="black">    
+<!-- iPhone私有标签，它指定的iPhone中safari顶端的状态条的样式 -->
+<meta name="format-detection" content="telephone=no; email=no" />    
+<!-- //不识别邮件和不把数字识别为电话号码 -->
+<meta name="screen-orientation" content="portrait" />
+<!-- uc强制竖屏 -->
+<title>百川环境-积分商城</title>
+<link rel="stylesheet" href="css/bootstrap/css/bootstrap.min.css" >
+<!-- 可选的Bootstrap主题文件（一般不用引入） -->
+<link rel="stylesheet" href="css/bootstrap/css/bootstrap-theme.min.css">
+<!-- jQuery文件。务必在bootstrap.min.js 之前引入 -->
+<script src="js/jquery/1.11.1/jquery.min.js"></script>
+<!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
+<script src="css/bootstrap/js/bootstrap.min.js"></script>
+<script src="js/jquery.cookie.js"></script>		
+<!-- 引入基本样式css -->
+<link rel="stylesheet" type="text/css" media="all"  href="css/base.css" >
+<!-- 引入公共样式css -->
+<link rel="stylesheet" type="text/css" media="all" href="css/common.css" >
+</head>
+<body>
+	<div class="wap-user">	
+		<div class="container">			
+			<div class="row">
+				<!--userinfo-->
+				<div class="row">
+					<a href="javascript:history.go(-1);" class="goback">
+						<img src="images/back.png" />
+					</a>
+					<h3 class="h-title">修改信息</h3>
+				</div>
+				<div class="edit-user">
+					<div class="user-message">
+						<ul>
+							<li class="loadimg">
+								<span class="tright left">当前头像：</span>
+								<span class="left"><img src="images/home_bg.jpg" width="70px" height="70px"/></span>
+							</li>
+							<li>
+								<span class="tright left">账户名：</span>
+								<span class="left"><input type="text" value="" class="edit-input" id="username" name="username" /></span>
+							</li>
+							<li>
+								<span class="tright left">手机号：</span>
+								<span class="left">1520000000</span>
+							</li>
+							<li>
+								<span class="tright left">当前积分：</span>
+								<span class="left">2990</span>
+							</li>
+							<li>
+								<span class="tright left">积分等级：</span>
+								<span class="left">环保达人</span>
+							</li>
+						</ul>
+					</div>
+					<button class="login-btn">修改</button>
+				</div>
+				<!--userinfo-->
+				
+			</div>			
+		</div>
+	</div>
+</body>
+</html>

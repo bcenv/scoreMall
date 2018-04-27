@@ -1,0 +1,107 @@
+﻿<!DOCTYPE html>
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=5.0" charset="UTF-8">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<meta name="format-detection" content="telephone=no">
+		<title>积分成长树</title>
+		<link href="css/score/reset.css" rel="stylesheet">
+		<link rel="stylesheet" href="css/score/font.css" />
+		<link rel="stylesheet" href="css/score/swiper-3.3.1.min.css" />
+		<link rel="stylesheet" href="css/score/common.css" />
+		<link rel="stylesheet" href="css/score/Homepage.css" />
+		<link rel="stylesheet" href="css/score/ModularForm.css" />
+		<link rel="stylesheet" href="css/score/LoginRegister.css" />
+		<script type="text/javascript" src="js/Libs/jquery.min.js" ></script>
+	</head>
+	<body>
+		<div class="wrapper">
+			<!--页头-->
+			<header class="header-blue">
+				<a href="user.html" class="return floatL"></a>				
+				<h3 class="floatL header-blue-text">
+					<span id="userName">我</span>的环保积分
+					<!--我，可查看别人的主页，这个我变成别人的昵称-->
+				</h3>
+			</header>				
+			<section class="main score">
+				<!--treeDiv-->
+				<div class="treeDiv">
+					<img src="images/score/sun.png"  class="sun"/>
+					<div class="scoreNum">
+						<div class="userImg">
+							<img src="http://img0.imgtn.bdimg.com/it/u=300369776,3527037574&fm=27&gp=0.jpg" />
+							<!--微信头像-->
+						</div>
+						<div class="userScore">
+							<span id="myScore">222</span>
+							<!--个人积分-->
+						</div>
+					</div>
+					<div class="trees">
+						<img src="images/score/03.png"  />
+						<!--01.png  - 06.png 树的成长 -->
+					</div>
+					<div class="linkDiv">
+						<a href="score-way.html" ><img src="images/score/raiders.png" /></a>
+						<a onclick=""><img src="images/score/gift.png" /></a>
+						<!--第一个攻略按钮暂时么有页面，赠送是好友之间赠送积分，一次10分，一天最多三次
+							
+							赠送按钮只在好友的主页才会显示。可参考支付宝蚂蚁森林
+						-->
+					</div>
+				</div>
+				<!--treeDiv-->
+				<!--newsDynamic-->
+				<div class="newsDynamic" style="margin-bottom:10px">
+					<h3>最新动态</h3>
+					<div>
+						<ul class="currentList">
+							<li>
+								<img src="http://img0.imgtn.bdimg.com/it/u=300369776,3527037574&fm=27&gp=0.jpg"  />
+								<span class="way">赠送10积分</span>
+								<span class="time">10分钟前</span>
+							</li>
+							<li>
+								<img src="http://img0.imgtn.bdimg.com/it/u=300369776,3527037574&fm=27&gp=0.jpg"  />
+								<span class="way">垃圾回收获得30积分</span>
+								<span class="time">10分钟前</span>
+							</li>
+						</ul>
+						<!--积分的增减动态-->
+						<h4><a href="scoreDetail.html">查看更多动态</a></h4>
+					</div>
+				</div>
+				<!--newsDynamic-->
+				<!--newsDynamic-->
+				<div class="newsDynamic">
+					<h3>排行榜</h3>
+					<div>
+						<ul class="currentList">
+							<li>
+								<img src="http://img0.imgtn.bdimg.com/it/u=300369776,3527037574&fm=27&gp=0.jpg"  />
+								<span class="level">
+									<span class="two">张三</span>
+									<span class="gray9">环保达人</span>
+								</span>
+								<span class="time">1200kg</span>
+							</li>
+							<li>
+								<img src="http://img0.imgtn.bdimg.com/it/u=300369776,3527037574&fm=27&gp=0.jpg"  />
+								<span class="level">
+									<span class="two">张三</span>
+									<span class="gray9">环保达人</span>
+								</span>
+								<span class="time">1200kg</span>
+							</li>
+							<!-- 等级：环保达人，环保大队长，环保小班长，环保小卫士，环保学员，环保新人 对应上面的六个成长图-->
+						</ul>
+						<h4><a href="top.html">查看更多排行</a></h4>
+					</div>
+				</div>
+				<!--newsDynamic-->
+			</section>
+		</div>
+	</body>
+</html>
