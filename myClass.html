@@ -8,46 +8,77 @@
 		<title>积分成长树</title>
 		<link href="css/score/reset.css" rel="stylesheet">
 		<link rel="stylesheet" href="css/score/common.css" />
+		<link rel="stylesheet" href="css/score/class.css" />
 		<script type="text/javascript" src="js/Libs/jquery.min.js" ></script>
 	</head>
 	<body>
 		<div class="wrapper">
 			<!--页头-->
 			<header class="header-blue">
-				<a href="user.html" class="return floatL"></a>				
+				<a onclick="javascript:history.go(-1)" class="return floatL"></a>				
 				<h3 class="floatL header-blue-text">
 					<span id="userName">我</span>的环保积分
 					<!--我，可查看别人的主页，这个我变成别人的昵称-->
 				</h3>
 			</header>				
 			<section class="main score">
-				<!--treeDiv-->
-				<div class="treeDiv">
-					<img src="images/score/sun.png"  class="sun"/>
-					<div class="scoreNum">
-						<div class="userImg">
-							<img src="http://img0.imgtn.bdimg.com/it/u=300369776,3527037574&fm=27&gp=0.jpg" />
-							<!--微信头像-->
-						</div>
-						<div class="userScore">
-							<span id="myScore">222</span>
-							<!--个人积分-->
-						</div>
-					</div>
-					<div class="trees">
-						<img src="images/score/03.png"  />
-						<!--01.png  - 06.png 树的成长 -->
-					</div>
-					<div class="linkDiv">
-						<a href="score-way.html" ><img src="images/score/raiders.png" /></a>
-						<a onclick=""><img src="images/score/gift.png" /></a>
-						<!--第一个攻略按钮暂时么有页面，赠送是好友之间赠送积分，一次10分，一天最多三次
-							
-							赠送按钮只在好友的主页才会显示。可参考支付宝蚂蚁森林
-						-->
+				<!--class-circle-->
+				<div class="circle_for" style="margin-bottom:10px">
+					<h1>郑州第十九中学八年二班</h1>
+					<div>
+						<ul>
+							<li>
+								<div>
+									<p class="green_value">2834</p>
+									<p class="gray_name">节约纸(公斤)</p>
+								</div>
+							</li>
+							<li>
+								<div>
+									<p class="green_value">2834</p>
+									<p class="gray_name">拯救树(棵）</p>
+								</div>
+							</li>
+							<li>
+								<div>
+									<p class="green_value">2834</p>
+									<p class="gray_name">循环水(立方)</p>
+								</div>
+							</li>
+							<li>
+								<div>
+									<p class="green_value">2834</p>
+									<p class="gray_name">再造电(度)</p>
+								</div>
+							</li>
+						</ul>
 					</div>
 				</div>
-				<!--treeDiv-->
+				<!--class-circle-->
+				<div class="class_name" style="margin-bottom:10px">
+					<table  cellspacing="0" cellpadding="0" border=0 >
+						<tr>
+							<td>
+								<span class="table_name">班级积分：</span>
+								<span class="table_value">222</span>
+							</td>
+							<td>
+								<span class="table_name">重量：</span>
+								<span class="table_value">222kg</span>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<span class="table_name">参与学生：</span>
+								<span class="table_value">67人</span>
+							</td>
+							<td>
+								<span class="table_name">总投递:</span>
+								<span class="table_value">66袋</span>
+							</td>
+						</tr>
+					</table>
+				</div>
 				<!--newsDynamic-->
 				<div class="newsDynamic" style="margin-bottom:10px">
 					<h3>最新动态</h3>

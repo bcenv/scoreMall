@@ -5,7 +5,7 @@
 		<meta name="apple-mobile-web-app-capable" content="yes">
 		<meta name="apple-mobile-web-app-status-bar-style" content="black">
 		<meta name="format-detection" content="telephone=no">
-		<title>积分成长树</title>
+		<title>投放记录</title>
 		<link href="css/score/reset.css" rel="stylesheet">
 		<link rel="stylesheet" href="css/score/common.css" />
 		<script type="text/javascript" src="js/Libs/jquery.min.js" ></script>
@@ -14,9 +14,9 @@
 		<div class="wrapper">
 			<!--页头-->
 			<header class="header-blue">
-				<a href="user-score.html" class="return floatL"></a>
+				<a onclick="javascript:history.go(-1)" class="return floatL"></a>
 				<h3 class="floatL header-blue-text">
-					排行榜
+					<span id="userName">我</span>的投放记录
 				</h3>
 			</header>				
 			<section class="main score">
@@ -26,21 +26,19 @@
 						<ul class="currentList">
 							<li>
 								<img src="http://img0.imgtn.bdimg.com/it/u=300369776,3527037574&fm=27&gp=0.jpg"  />
-								<span class="level">
-									<span class="two">张三</span>
-									<span class="gray9">环保达人</span>
-								</span>
-								<span class="time">1200kg</span>
+								<span class="way">投放获得10积分</span>
+								<span class="time">10分钟前</span>
 							</li>
 							<li>
 								<img src="http://img0.imgtn.bdimg.com/it/u=300369776,3527037574&fm=27&gp=0.jpg"  />
-								<span class="level">
-									<span class="two">李四</span>
-									<span class="gray9">环保达人</span>
-								</span>
-								<span class="time">1200kg</span>
+								<span class="way">投放获得10积分</span>
+								<span class="time">08:23</span>
 							</li>
-							<!-- 等级：环保达人，环保大队长，环保小班长，环保小卫士，环保学员，环保新人 对应上面的六个成长图-->
+							<li>
+								<img src="http://img0.imgtn.bdimg.com/it/u=300369776,3527037574&fm=27&gp=0.jpg"  />
+								<span class="way">投放获得10积分</span>
+								<span class="time">04/27</span>
+							</li>
 						</ul>
 						<!--积分排行榜-->
 					</div>
