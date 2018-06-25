@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,height=device-height,inital-scale=1.0,maximum-scale=1.0,user-scalable=no">
+<meta name="apple-mobile-web-app-capable" content="yes">    
+<!-- iPhone私有标签，它表示：允许全屏模式浏览 -->
+<meta name="apple-mobile-web-app-status-bar-style" content="black">    
+<!-- iPhone私有标签，它指定的iPhone中safari顶端的状态条的样式 -->
+<meta name="format-detection" content="telephone=no; email=no" />    
+<!-- //不识别邮件和不把数字识别为电话号码 -->
+<meta name="screen-orientation" content="portrait" />
+<!-- uc强制竖屏 -->
+<title>百川环境-积分商城</title>
+<link rel="stylesheet" href="css/bootstrap/css/bootstrap.min.css" >
+<!-- 可选的Bootstrap主题文件（一般不用引入） -->
+<link rel="stylesheet" href="css/bootstrap/css/bootstrap-theme.min.css">
+<!-- jQuery文件。务必在bootstrap.min.js 之前引入 -->
+<script src="js/jquery/1.11.1/jquery.min.js"></script>
+<!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
+<script src="css/bootstrap/js/bootstrap.min.js"></script>
+<script src="js/jquery.cookie.js"></script>		
+<!-- 引入基本样式css -->
+<link rel="stylesheet" type="text/css" media="all"  href="css/garbage.css" >
+<!-- 引入公共样式css -->
+<link rel="stylesheet" type="text/css" media="all" href="css/common.css" >
+
+</head>
+<body>
+	<div class="garbage-wap">	
+		<div class="container">			
+			<div class="row">
+				<div class="col-sm-12 garbage-title">
+					<img src="images/garbage-title.png" />
+				</div>
+				<div class="text-center active-time">
+					<p>活动时间：2018年
+						<span class="blue-color">7</span>
+				          月<span class="blue-color">1</span>
+						日-<span class="blue-color">12</span>
+						月<span class="blue-color">1</span>日</p>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-sm-12">
+					<div class="Calendar">
+						<div id="toyear" class="flex flex-pack-center">
+							<div id="idCalendarPre">&lt;</div>
+							<div class="year-month">
+								<span id="idCalendarYear">2018</span>年
+								<span id="idCalendarMonth">6</span>月
+							</div>
+							<div id="idCalendarNext">&gt;</div>
+						</div>
+						<table border="1px" cellpadding="0" cellspacing="0">
+							<thead>
+								<tr class="tou">
+									<td>日</td>
+									<td>一</td>
+									<td>二</td>
+									<td>三</td>
+									<td>四</td>
+									<td>五</td>
+									<td>六</td>
+								</tr>
+							</thead>
+							<tbody id="idCalendar">
+							</tbody>
+						</table>
+					</div>
+				</div>
+				<div class="col-sm-12">
+					<div class="tips">累计垃圾分类：<span class="blue-color">10</span>天</div>
+					<p class="text-center">您本月再参与垃圾分类 5 天，即可免费领取垃圾袋一包。</p>
+				</div>
+			</div>
+			<!-- row -->
+			<div class="row">
+				<div class="col-sm-12 airplan-cloud">
+					<div class="active-rule">
+						<h3>活动规则</h3>
+						<p>用户每月累计15天参与垃圾分类即可于次月1日到百川垃圾分类回收站点免费领取垃圾袋一包；</p>
+						<p>每天至少投放两类垃圾才算参与垃圾分类，才能被累计；</p>
+						<p>关注公众号「百川生活家」- 点击「免费领」查看参与天数，获取垃圾袋兑换券；</p>
+						<p>次月1日到百川垃圾分类回收站点，向工作人员出示垃圾袋兑换券即可免费领取垃圾袋。</p>
+						<p>每人每月仅限领取一包垃圾袋，请在活动期限内领取完毕，逾期视为放弃领取资格。</p>
+					</div>
+				</div>
+			</div>
+			<!-- row -->
+			<!-- row -->
+			<div class="row">
+				<div class="col-sm-12 garbage-slogan">
+					<img src="images/garbage-slogen.png" />
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-sm-12 garbage-onclick">
+					<button class="garbage-btn">点击领取</button>
+				</div>
+			</div>
+			<!-- row -->
+			<div class="row">
+				<div class="col-sm-12 garbage-foot">
+					<img src="images/garbage-foot.png" />
+				</div>
+			</div>
+			<!-- row -->
+		</div>
+	</div>
+	<script src="js/rili.js"></script>
+	<script language="JavaScript">
+		var selectArry = [2,4,5,6,7];
+		var cale = new Calendar("idCalendar", {
+			onFinish: function() {
+				var monthEng= ["January","February","March","April","May","June","July","August","September","October", "November","December"];
+				$$("idCalendarYear").innerHTML = this.Year;
+				$$("idCalendarMonth").innerHTML = this.Month; //表头年份
+				for(var i=0; i<  selectArry.length;i++){
+					$('.day_'+selectArry[i]).addClass('select-calendar');
+				}
+			}
+		});
+		$$("idCalendarPre").onclick = function() {
+			selectArry = [2,5,7];
+			cale.PreMonth();
+		}
+		$$("idCalendarNext").onclick = function() {
+			cale.NextMonth();
+		}
+		
+	</script>
+</body>
+</html>
