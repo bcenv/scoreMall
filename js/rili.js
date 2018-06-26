@@ -53,6 +53,7 @@ Calendar.prototype = {
 		this.Year = d.getFullYear();
 		this.Month = d.getMonth() + 1;
 		this.Draw();
+		
 	},
 	//画日历
 	Draw: function() {

@@ -1,0 +1,30 @@
+.share-wap{
+    background: url(../images/share_bg.jpg);
+    background-size: 100% 100%;
+    width:100%;
+}
+.share_title_tx{
+    width:80px;
+    display: block;
+    height:80px;
+    border-radius:80px;
+    border:1px solid #90c86b;
+    margin:30px auto 40px;
+}
+.blue_color{
+    color:#009e96;
+}
+.left_text{
+    margin-left:80px;
+}
+.main_text{
+    font-size:16px;
+    width:70%;
+    margin:0 auto;
+}
+.share_slogan{
+    margin:30px 0 10px;
+}
+.share_slogan img{
+    width:70%
+}

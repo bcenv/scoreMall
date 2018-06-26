@@ -111,6 +111,7 @@
 	<script src="js/rili.js"></script>
 	<script language="JavaScript">
 		var selectArry = [2,4,5,6,7];
+		var changeFullYearMonth;
 		var cale = new Calendar("idCalendar", {
 			onFinish: function() {
 				var monthEng= ["January","February","March","April","May","June","July","August","September","October", "November","December"];
@@ -124,9 +125,12 @@
 		$$("idCalendarPre").onclick = function() {
 			selectArry = [2,5,7];
 			cale.PreMonth();
+			changeFullYearMonth =  $$("idCalendarYear").innerHTML+'-'+$$("idCalendarMonth").innerHTML+'-1';
+			console(changeFullYearMonth);
 		}
 		$$("idCalendarNext").onclick = function() {
 			cale.NextMonth();
+			changeFullYearMonth =  $$("idCalendarYear").innerHTML+'-'+$$("idCalendarMonth").innerHTML+'-1';
 		}
 		
 	</script>
